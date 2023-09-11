@@ -1,0 +1,150 @@
+{
+    "basics": {
+      "name": "Alagappan Kumaravel",
+      "label": "Full-stack developer",
+      "picture": "https://iili.io/HNOmKYB.jpg",
+      "email": "alagappan2578@gmail.com",
+      "phone": "+91 9344655211",
+      "website": "",
+      "summary": "My name is Alagappan, and I come from a humble background. I completed a diploma in mechanical engineering and worked as a quality supervisor at MRF Private Ltd. for 1.5 years. However, I realized coding was my passion, so I started learning HTML and CSS. I joined FSSA, a program dedicated to teaching coding to underprivileged students, and I've been flourishing with their invaluable support.My ultimate goal is to continue acquiring knowledge and using it to create meaningful solutions for my community.",
+      "location": {
+        "address": "No 61/25 south kasar garden st, Aminjikarai",
+        "postalCode": "600029",
+        "city": "Chennai",
+        "countryCode": "IN",
+        "region": "Tamil Nadu"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "ALAGAPPAN K",
+          "url": "https://www.linkedin.com/in/alagappan-k-a7a06a22b/"
+        },
+        {
+          "network": "GitHub",
+          "username": "alagappan2578",
+          "url": "https://github.com/alagappan2578"
+        }
+      ]
+    },
+    "projects": [
+      {
+        "name": "Sports hub (HTML + JS)",
+        "about": "This project involved building a front end web app with Html, css, javaScript.",
+        "documents": [
+          {
+            "name": "Problem statement",
+            "url": "https://docs.google.com/document/d/1mcNfaGt16Z_qDbZj0pBTLbLvu7Toq4d8/edit"
+          },
+          {
+            "name": "Wire frames",
+            "url": "https://drive.google.com/drive/folders/0AAd5pY7XiEPqUk9PVA"
+          },
+          {
+            "name": "market research",
+            "url": "https://www.canva.com/design/DAFjKrbnZLE/kJjM1AaXVt0sTDtWv5IqYg/view?utm_content=DAFjKrbnZLE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+          }
+        ],
+        "github": "https://github.com/fssa-batch3/alagappan.kumaravel__web_project",
+        "sonarcloud": "https://sonarcloud.io/project/overview?id=fssa-batch3_alagappan.kumaravel__web_project",
+        "liveUrl": "",
+        "technologies": [
+          "HTML 5",
+          "CSS 3",
+          "Node.js"
+        ],
+        "screenShots": [
+            "https://iili.io/J9iVaM7.png",
+            "https://iili.io/J9iVcP9.png",
+            "https://iili.io/J9iV0Fe.png"
+        ]
+      },
+      {
+        "name": "Sports hub (Java + My SQL)",
+        "about": "This project involved building a back end web app with Java, My SQL",
+        "documents": [
+          {
+            "name": "Problem statement",
+            "url": "https://docs.google.com/document/d/1mcNfaGt16Z_qDbZj0pBTLbLvu7Toq4d8/edit"
+          },
+          {
+            "name": "Wire frames",
+            "url": "https://drive.google.com/drive/folders/0AAd5pY7XiEPqUk9PVA"
+          },
+          {
+            "name": "market research",
+            "url": "https://www.canva.com/design/DAFjKrbnZLE/kJjM1AaXVt0sTDtWv5IqYg/view?utm_content=DAFjKrbnZLE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+          }
+        ],
+        "github": "https://github.com/fssa-batch3/sec_b_alagappan.kumaravel__corejava_project_2",
+        "sonarcloud": "https://sonarcloud.io/project/overview?id=fssa-batch3_sec_b_alagappan.kumaravel__corejava_project_2",
+        "liveUrl": "",
+        "technologies": [
+          "Java",
+          "My Sql"
+        ],
+        "screenShots": [
+            "https://iili.io/J9iVaM7.png",
+            "https://iili.io/J9iVcP9.png",
+            "https://iili.io/J9iV0Fe.png"
+        ]
+      }
+      
+    ],
+    "certificates": [
+      {
+        "name": "Hacker Rank Basic in SQL",
+        "url": "https://www.hackerrank.com/certificates/e98a79a2d9a1"
+      },
+      {
+        "name": "Hacker Rank Basic in Problem-Solving",
+        "url": "https://www.hackerrank.com/certificates/52683b3016e8"
+      },
+      {
+        "name": "Hacker Rank Basic in JavaScript",
+        "url": "https://www.hackerrank.com/certificates/e444d1579946"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Anna University",
+        "area": "Mechanical Engineering",
+        "studyType": "Diploma",
+        "startDate": "2017-06-01",
+        "endDate": "2020-06-01",
+        "Percentage": "94%",
+        "courses": [
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Front-end",
+        "level": "Proficient",
+        "keywords": [
+          "HTML 5",
+          "CSS 3",
+          "JavaScript",
+          "React.js"
+        ]
+      },
+      {
+        "name": "Back-end",
+        "level": "Proficient",
+        "keywords": [
+          "Java",
+          "My SQL"
+        ]
+      }
+    ],
+    "languages": [
+        {
+        "language": "Tamil",
+        "fluency": "Native speaker"
+        },
+      {
+        "language": "English",
+        "fluency": "Good"
+      }
+    ]
+  }

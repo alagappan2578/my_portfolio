@@ -206,6 +206,10 @@ textarea {
   font-size: inherit;
   line-height: inherit; }
 
+.skill-subhead{
+  width: 84%;
+  margin-bottom: 34px;
+}  
 button,
 input {
   overflow: visible; }
