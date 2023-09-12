@@ -213,7 +213,7 @@
 						<div class="progress-wrap ftco-animate">
 							<h3>CSS3</h3>
 							<div class="skill-subhead">
-								<p>Box Model, Selectors, Transitions, Transforms, Animations, Flexbox, Grid Layout, Media Queries, Custom Properties (Variables), Transparency (Opacity), Gradient Backgrounds.</p>
+								<p>Box Model, Selectors, Transforms, Animations, Flexbox, Grid Layout, Media Queries, Custom Properties, Gradient Backgrounds.</p>
 							</div>
 							<div class="progress">
 							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
@@ -227,12 +227,12 @@
 						<div class="progress-wrap ftco-animate">
 							<h3>Java (Core Java, Servlet, JSP)</h3>
 							<div class="skill-subhead">
-								<p>Classes and Objects, Inheritance, Polymorphism, Abstract, Inheritance, Exception Handling, Collections, JDBC, HTTP Request and Response, Servlet Lifecycle, JSP Integration and JSP tags.</p>
+								<p>Classes and Objects, Inheritance, Polymorphism, Abstract, Inheritance, Exception Handling, JDBC,JSP Integration and JSP tags.</p>
 							</div>
 							<div class="progress">
 							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-							    <span>70%</span>
+							  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
+							    <span>60%</span>
 							  	</div>
 							</div>
 						</div>
@@ -241,7 +241,7 @@
 						<div class="progress-wrap ftco-animate">
 							<h3>Java Script</h3>
 							<div class="skill-subhead">
-								<p>Variables, Data Types, Operators, Functions, Objects, Arrays, Conditional Statements, Loops, DOM Manipulation, Event Handling, AJAX, Promises and Asynchronous Programming.</p>
+								<p>Functions, Objects, Arrays, Conditional Statements, Loops, DOM Manipulation, Event Handling, AJAX, Promises and Asynchronous Programming.</p>
 							</div>
 							<div class="progress">
 							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
@@ -255,7 +255,7 @@
 						<div class="progress-wrap ftco-animate">
 							<h3>React JS</h3>
 							<div class="skill-subhead">
-								<p>Components, Props (Properties), State, Lifecycle Methods, Hooks, Rendering, Events, Conditional Rendering, Forms and Controlled Components.</p>
+								<p>Components, Props (Properties), State, Hooks, Rendering, Events, Conditional Rendering, Forms and Controlled Components.</p>
 							</div>
 							<div class="progress">
 							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
@@ -400,18 +400,18 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form id="contactForm" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" id="name" class="form-control" placeholder="Your Name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="text" id="email" class="form-control" placeholder="Your Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" id="subject" class="form-control" placeholder="Subject">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -486,6 +486,33 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+	emailjs.init('xa_FVq4V_yYsAwb7d');
+	// Use the form's submit event instead of click event
+	let form = document.getElementById("contactForm");
+	form.addEventListener("submit", function(event) {
+	  event.preventDefault();
+	  // Gather form data
+	  const name = document.getElementById("name").value;
+	  const email = document.getElementById("email").value;
+	  const subject = document.getElementById("subject").value;
+	  const message = document.getElementById("message").value;
+	  // Send the email using Email.js
+	  emailjs.send('service_4vmlimc', 'template_aesgclq', {
+		from_name: name,
+		from_email: email,
+		message: message,
+		subject: subject
+	  }).then(function(response) {
+		console.log('Email sent:', response);
+		alert("Email sent successfully!");
+		form.reset();
+	  }, function(error) {
+		console.error('Email sending failed:', error);
+		alert("Failed to send email. Please try again later.");
+	  });
+	});
+  </script>
   </body>
 </html>
